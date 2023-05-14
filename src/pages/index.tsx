@@ -65,6 +65,11 @@ export default function Home() {
             <h1 className={'h-full w-full flex justify-center text-center align-middle'}>Mapbox GL (globe)</h1>
           </Link>
         </div>
+        <div className={"flex justify-center h-16  w-full   items-center"}>
+          <Link className={'bg-black rounded text-white p-2 w-3/12 text-center items-center'} href="/chat_page" locale={router.locales  && router.locales[0]}>
+            <h1 className={'h-full w-full flex justify-center text-center align-middle'}>LangChain (globe)</h1>
+          </Link>
+        </div>
 
 
 
