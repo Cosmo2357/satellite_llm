@@ -33,3 +33,6 @@ knex migrate:up <name>: Run the specified migration.
 knex migrate:down <name>: Rollback the specified migration.
 knex migrate:status: Show the status of all migrations.
 ```
+
+## langchainjs
+https://github.com/hwchase17/langchainjs#readme
