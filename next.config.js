@@ -6,10 +6,15 @@ const nextConfig = {
   reactStrictMode: true,
   i18n ,
   webpack: config => {
+    config.experiments = {
+      asyncWebAssembly: true,
+      layers: true,
+    };
     config.plugins.push(
       new webpack.DefinePlugin({
         CESIUM_BASE_URL: JSON.stringify('cesium'),
       }),
+      
     );
     return config;
   },
