@@ -5,6 +5,10 @@ const webpack = require('webpack');
 const nextConfig = {
   reactStrictMode: true,
   i18n ,
+  transpilePackages: ['@deck.gl/layers', '@mapbox/tiny-sdf'],
+experimental: {
+  esmExternals: 'loose',
+},
   webpack: config => {
     config.experiments = {
       asyncWebAssembly: true,
@@ -16,6 +20,7 @@ const nextConfig = {
       }),
       
     );
+    
     return config;
   },
 }
