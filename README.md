@@ -3,6 +3,11 @@
 |---|---|
 |Node|v18.2.0|
 
+- Pinecone numjs
+- LangChain
+- MapBox
+- cesium
+- DeckGL
 - Stripe 
   - Session and Payment element example
 -  NextAuth for authentication

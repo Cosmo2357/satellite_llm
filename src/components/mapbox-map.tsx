@@ -1,6 +1,7 @@
 import * as React from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import { ProjectionPickerViewModel } from "cesium";
 // reference: https://dev.to/dqunbp/using-mapbox-gl-in-react-with-next-js-2glg
 // thanx good article :D
 //https://github.com/mapbox/mapbox-react-examples
@@ -22,7 +23,7 @@ function MapboxMap() {
       //show satellite map
       style: 'mapbox://styles/mapbox/satellite-v9',
       //style: "mapbox://styles/mapbox/streets-v11",
-      projection: 'globe',
+      projection:  {name: 'globe'},
       accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN,
       
       center: [-74.5, 40],
