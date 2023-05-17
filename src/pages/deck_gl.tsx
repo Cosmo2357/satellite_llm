@@ -3,6 +3,7 @@ import DeckGL from '@deck.gl/react';
 import { LineLayer } from '@deck.gl/layers';
 import { Map } from 'react-map-gl';
 
+
 type Props = {}
 const MAPBOX_ACCESS_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN; // eslint-disable-line
 

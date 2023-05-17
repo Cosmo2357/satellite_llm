@@ -10,6 +10,8 @@ import {
   SystemMessagePromptTemplate,
 } from "langchain/prompts";
 import { HumanChatMessage, SystemChatMessage } from "langchain/schema";
+import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
@@ -21,6 +23,10 @@ export const config = {
 };
 
 export default async function handler(req: any, res: NextApiResponse) {
+  const embeddings = new OpenAIEmbeddings();
+  const embeddingsRes= await embeddings.embedQuery("Hello world");
+  console.log(embeddingsRes);
+
   const body = await req.json()
 console.log(body)
   try {
