@@ -1,7 +1,9 @@
 # My messy starter😅
+Just for checking some libraries. It seems that some geo libraries are not working well with nextjs. Using React or svelte might be a better choice 😭
 |||
 |---|---|
 |Node|v18.2.0|
+
 
 - Pinecone numjs
 - LangChain
